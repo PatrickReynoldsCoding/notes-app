@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1657535359890" clover="3.2.0">
+  <project timestamp="1657535359890" name="All files">
+    <metrics statements="40" coveredstatements="31" conditionals="0" coveredconditionals="0" methods="20" coveredmethods="16" elements="60" coveredelements="47" complexity="0" loc="40" ncloc="40" packages="1" files="3" classes="3"/>
+    <file name="notesApi.js" path="/Users/patrickreynolds/repos/notes-app/notesApi.js">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <line num="3" count="2" type="stmt"/>
+      <line num="4" count="2" type="stmt"/>
+      <line num="6" count="2" type="stmt"/>
+      <line num="7" count="2" type="stmt"/>
+      <line num="16" count="2" type="stmt"/>
+    </file>
+    <file name="notesModel.js" path="/Users/patrickreynolds/repos/notes-app/notesModel.js">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+      <line num="3" count="7" type="stmt"/>
+      <line num="7" count="8" type="stmt"/>
+      <line num="11" count="9" type="stmt"/>
+      <line num="15" count="1" type="stmt"/>
+      <line num="19" count="2" type="stmt"/>
+    </file>
+    <file name="notesView.js" path="/Users/patrickreynolds/repos/notes-app/notesView.js">
+      <metrics statements="30" coveredstatements="21" conditionals="0" coveredconditionals="0" methods="13" coveredmethods="9"/>
+      <line num="3" count="4" type="stmt"/>
+      <line num="4" count="4" type="stmt"/>
+      <line num="5" count="4" type="stmt"/>
+      <line num="7" count="4" type="stmt"/>
+      <line num="10" count="3" type="stmt"/>
+      <line num="11" count="3" type="stmt"/>
+      <line num="12" count="3" type="stmt"/>
+      <line num="17" count="3" type="stmt"/>
+      <line num="18" count="3" type="stmt"/>
+      <line num="24" count="1" type="stmt"/>
+      <line num="29" count="4" type="stmt"/>
+      <line num="30" count="1" type="stmt"/>
+      <line num="34" count="0" type="stmt"/>
+      <line num="35" count="0" type="stmt"/>
+      <line num="36" count="0" type="stmt"/>
+      <line num="37" count="0" type="stmt"/>
+      <line num="38" count="0" type="stmt"/>
+      <line num="39" count="0" type="stmt"/>
+      <line num="43" count="4" type="stmt"/>
+      <line num="44" count="4" type="stmt"/>
+      <line num="45" count="4" type="stmt"/>
+      <line num="46" count="6" type="stmt"/>
+      <line num="47" count="6" type="stmt"/>
+      <line num="48" count="6" type="stmt"/>
+      <line num="49" count="6" type="stmt"/>
+      <line num="54" count="1" type="stmt"/>
+      <line num="55" count="0" type="stmt"/>
+      <line num="56" count="0" type="stmt"/>
+      <line num="58" count="0" type="stmt"/>
+      <line num="63" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>

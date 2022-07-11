@@ -4,9 +4,12 @@
 
 const fs = require("fs");
 const { hasUncaughtExceptionCaptureCallback } = require("process");
+const NotesApi = require("./notesApi");
 
 const NotesModel = require("./notesModel");
 const NotesView = require("./notesView");
+
+require('jest-fetch-mock').enableMocks();
 
 describe("Notes view", () => {
   //  xit("displays two notes", () => {
@@ -64,5 +67,18 @@ describe("Notes view", () => {
     inputButtonEl.click();
 
     expect(document.querySelector("#note-input").value).toEqual("");
+  });
+
+  it("tests the displayNotesFromApi function", () => { //this test is broken
+    document.body.innerHTML = fs.readFileSync("./index.html");
+    const api = new NotesApi();
+    fetch.mockResponseOnce(JSON.stringify(['This note is coming from the server']));
+
+    const model = new NotesModel();
+    const view = new NotesView(model, api);
+    view.displayNotesFromApi() 
+   
+    expect(view.testDisplay()).toEqual([])
+    // expect(document.querySelectorAll("div.note")[0].innerText).toEqual('This note is coming from the server');
   });
 });

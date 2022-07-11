@@ -12,29 +12,17 @@ describe('NotesAPI class', () => {
     //remove async if this doesnt work
     const notesApi = new NotesApi();
     fetch.mockResponseOnce(JSON.stringify({
-        // ['This note is coming from the server']
-        name: 'Some value',
-        id: 123
-      }));
+       name: 'This note is coming from the server'
+    }
+       ));
 
-    notesApi.loadNotes((responseData) => {
-      expect(responseData).toEqual({
-        name: 'Some value',
-        id: 123
-      });
-    })
+   
+      expect(notesApi.loadNotes()).toBe('This note is coming from the server');
+    
   })
-
+//our loadnotes function gives our fetch data to a callback function. 
+//So in the test above, we write our test as this callback.
+//the mockResponseOnce intercepts the actual fetch request and sends the 
+//fake data we mocked on line 14, and to compare.
+//Like many things in coding, it's a quite clever and innovative way to test our Api
 })
-
-
-
-// notesApi.loadNotes().then(responseData => {
-//   expect(responseData).toEqual({
-//     name: 'Some value',
-//     id: 123,
-//   });
-// });
-
-
-//here are some changes i really want to add.
